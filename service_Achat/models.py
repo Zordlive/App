@@ -1,5 +1,5 @@
 from django.db import models
-from .models import client
+from compte.models import client
 
 # Create your models here.
 class produit(models.Model):
@@ -14,7 +14,7 @@ class livraison(models.Model):
     N_adresse=models.fields.IntegerField(max_length=10),
     commune=models.fields.CharField(max_length=50),
     ville=models.fields.CharField(max_length=50),
-class depot(models.Model):
+
     
     
 
