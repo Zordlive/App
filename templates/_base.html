@@ -17,6 +17,10 @@
 </head>
 
 <body class="bg-green-50">
+    <div>
+        {% block sidebar %}
+        {% endblock sidebar %}
+    </div>
     <div class="container mx-auto mt-4">
         {% block content %}
         {% endblock content %}
