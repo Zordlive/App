@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -55,7 +56,11 @@ ROOT_URLCONF = 'MoliApp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS':[BASE_DIR / "templates"],
+=======
+        'DIRS':[os.path.join(BASE_DIR,'templates')],
+>>>>>>> d87ffc8 (creation page et components)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

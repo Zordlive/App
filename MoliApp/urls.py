@@ -15,16 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+<<<<<<< HEAD
 from django.urls import path, include
 from .views import index
 from MoliApp.views import nav, about, actualite, header, footer, inscription
 from django.conf.urls.static import static
+=======
+from django.urls import path
+from .views import home
+>>>>>>> d87ffc8 (creation page et components)
 
 from . import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('', index, name='index'),
     path('about/', about, name="about"),
     path('footer/', footer, name="footer"),
@@ -35,4 +41,7 @@ urlpatterns = [
     path('header/', header, name="header"),
     path('inscription/', inscription, name="inscription"),
     
+=======
+    path('', home, name='index')
+>>>>>>> d87ffc8 (creation page et components)
 ]
